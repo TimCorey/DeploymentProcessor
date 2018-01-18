@@ -97,7 +97,7 @@
             this.stepOneBox.Controls.Add(this.availableSitesListBox);
             this.stepOneBox.Location = new System.Drawing.Point(40, 54);
             this.stepOneBox.Name = "stepOneBox";
-            this.stepOneBox.Size = new System.Drawing.Size(558, 314);
+            this.stepOneBox.Size = new System.Drawing.Size(543, 466);
             this.stepOneBox.TabIndex = 5;
             this.stepOneBox.TabStop = false;
             this.stepOneBox.Text = "Step 1 - Select Sites";
@@ -105,29 +105,29 @@
             // removeSiteButton
             // 
             this.removeSiteButton.BackColor = System.Drawing.Color.White;
-            this.removeSiteButton.Location = new System.Drawing.Point(249, 198);
+            this.removeSiteButton.Location = new System.Drawing.Point(458, 372);
             this.removeSiteButton.Name = "removeSiteButton";
             this.removeSiteButton.Size = new System.Drawing.Size(61, 43);
             this.removeSiteButton.TabIndex = 5;
-            this.removeSiteButton.Text = "<-";
+            this.removeSiteButton.Text = "-";
             this.removeSiteButton.UseVisualStyleBackColor = false;
             this.removeSiteButton.Click += new System.EventHandler(this.removeSiteButton_Click);
             // 
             // selectSiteButton
             // 
             this.selectSiteButton.BackColor = System.Drawing.Color.White;
-            this.selectSiteButton.Location = new System.Drawing.Point(249, 149);
+            this.selectSiteButton.Location = new System.Drawing.Point(458, 146);
             this.selectSiteButton.Name = "selectSiteButton";
             this.selectSiteButton.Size = new System.Drawing.Size(61, 43);
             this.selectSiteButton.TabIndex = 4;
-            this.selectSiteButton.Text = "->";
+            this.selectSiteButton.Text = "+";
             this.selectSiteButton.UseVisualStyleBackColor = false;
             this.selectSiteButton.Click += new System.EventHandler(this.selectSiteButton_Click);
             // 
             // selectedSitesLabel
             // 
             this.selectedSitesLabel.AutoSize = true;
-            this.selectedSitesLabel.Location = new System.Drawing.Point(320, 66);
+            this.selectedSitesLabel.Location = new System.Drawing.Point(14, 272);
             this.selectedSitesLabel.Name = "selectedSitesLabel";
             this.selectedSitesLabel.Size = new System.Drawing.Size(155, 32);
             this.selectedSitesLabel.TabIndex = 3;
@@ -135,17 +135,19 @@
             // 
             // selectedSitesListBox
             // 
+            this.selectedSitesListBox.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selectedSitesListBox.FormattingEnabled = true;
-            this.selectedSitesListBox.ItemHeight = 32;
-            this.selectedSitesListBox.Location = new System.Drawing.Point(326, 101);
+            this.selectedSitesListBox.ItemHeight = 21;
+            this.selectedSitesListBox.Location = new System.Drawing.Point(16, 307);
             this.selectedSitesListBox.Name = "selectedSitesListBox";
-            this.selectedSitesListBox.Size = new System.Drawing.Size(216, 196);
+            this.selectedSitesListBox.Size = new System.Drawing.Size(436, 151);
             this.selectedSitesListBox.TabIndex = 2;
+            this.selectedSitesListBox.DoubleClick += new System.EventHandler(this.selectedSitesListBox_DoubleClick);
             // 
             // availableSitesLabel
             // 
             this.availableSitesLabel.AutoSize = true;
-            this.availableSitesLabel.Location = new System.Drawing.Point(10, 66);
+            this.availableSitesLabel.Location = new System.Drawing.Point(14, 66);
             this.availableSitesLabel.Name = "availableSitesLabel";
             this.availableSitesLabel.Size = new System.Drawing.Size(159, 32);
             this.availableSitesLabel.TabIndex = 1;
@@ -153,12 +155,14 @@
             // 
             // availableSitesListBox
             // 
+            this.availableSitesListBox.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.availableSitesListBox.FormattingEnabled = true;
-            this.availableSitesListBox.ItemHeight = 32;
+            this.availableSitesListBox.ItemHeight = 21;
             this.availableSitesListBox.Location = new System.Drawing.Point(16, 101);
             this.availableSitesListBox.Name = "availableSitesListBox";
-            this.availableSitesListBox.Size = new System.Drawing.Size(216, 196);
+            this.availableSitesListBox.Size = new System.Drawing.Size(436, 151);
             this.availableSitesListBox.TabIndex = 0;
+            this.availableSitesListBox.DoubleClick += new System.EventHandler(this.availableSitesListBox_DoubleClick);
             // 
             // stepTwoBox
             // 
@@ -167,7 +171,7 @@
             this.stepTwoBox.Controls.Add(this.backUpSitesButton);
             this.stepTwoBox.Location = new System.Drawing.Point(630, 54);
             this.stepTwoBox.Name = "stepTwoBox";
-            this.stepTwoBox.Size = new System.Drawing.Size(304, 314);
+            this.stepTwoBox.Size = new System.Drawing.Size(304, 466);
             this.stepTwoBox.TabIndex = 6;
             this.stepTwoBox.TabStop = false;
             this.stepTwoBox.Text = "Step 2 - Choose Action";
@@ -178,9 +182,9 @@
             this.dashboardStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dashboardStatus,
             this.dashboardProgress});
-            this.dashboardStatusStrip.Location = new System.Drawing.Point(0, 394);
+            this.dashboardStatusStrip.Location = new System.Drawing.Point(0, 538);
             this.dashboardStatusStrip.Name = "dashboardStatusStrip";
-            this.dashboardStatusStrip.Size = new System.Drawing.Size(982, 22);
+            this.dashboardStatusStrip.Size = new System.Drawing.Size(963, 22);
             this.dashboardStatusStrip.TabIndex = 7;
             this.dashboardStatusStrip.Text = "statusStrip1";
             // 
@@ -202,7 +206,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(982, 416);
+            this.ClientSize = new System.Drawing.Size(963, 560);
             this.Controls.Add(this.dashboardStatusStrip);
             this.Controls.Add(this.stepTwoBox);
             this.Controls.Add(this.stepOneBox);

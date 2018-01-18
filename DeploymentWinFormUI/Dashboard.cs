@@ -172,5 +172,15 @@ namespace DeploymentWinFormUI
                 restoreSitesButton.Text = originalButtonText;
             }
         }
+
+        private void availableSitesListBox_DoubleClick(object sender, EventArgs e)
+        {
+            AddSelectedSite();
+        }
+
+        private void selectedSitesListBox_DoubleClick(object sender, EventArgs e)
+        {
+            RemoveSelectedSite();
+        }
     }
 }
